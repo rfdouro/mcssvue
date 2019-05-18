@@ -17,3 +17,7 @@ MCssVue is downloaded by directly link in....
 In future.....
 To install the latest version on npm locally and save it in your package's `package.json` file:
 
+The dist version is obtaining in [MCssVue.js](https://github.com/rfdouro/mcssvue/blob/master/public_html/dist/resources/components/MCssVue.js) file.
+
+----------------------
+
