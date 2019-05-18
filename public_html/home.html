@@ -1,0 +1,48 @@
+<style>
+ 
+</style>
+
+<div id="appHome">
+ <div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+   <h1 class="header center black-text">Página inicial</h1>
+   <hr class="star-light">
+   <div class="row center">
+    <h5 class="header col s12 light">Sistemas Administrativos Inteligentes</h5>
+   </div>
+   <div class="row center">
+    <a href="http://materializecss.com/getting-started.html" id="download-button" 
+       class="btn-large waves-effect waves-light pink">Get Started</a>
+    <md-a-button id='btn-a-button1' cor='yellow black-text' tamanho='pequeno'>teste</md-a-button>
+    <md-a-button id='btn-a-button2' icon="face" iconpos="right">teste</md-a-button>
+    <md-a-button id='btn-a-button' tipo='warning' tooltiptext="bla bla" tooltipposition="top" tamanho='grande'>teste</md-a-button>
+   </div>
+   <br><br>
+
+  </div>
+ </div>
+ <md-collapsible >
+  <md-collapsible-item>
+   <template v-slot:header><md-icon icon="place"></md-icon>Teste</template>
+   <template v-slot:body>ccc</template>
+  </md-collapsible-item>
+ </md-collapsible>
+
+</div>
+
+<script>
+ new Vue({
+  el: '#appHome',
+  data: {
+
+  },
+  mounted: function () {
+   this.$nextTick(function () {
+
+   });
+  },
+  methods: {
+
+  }
+ })
+</script>

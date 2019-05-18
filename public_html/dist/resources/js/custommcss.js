@@ -1,0 +1,1 @@
+var n=window.navigator.userAgent;console.log(n),M.Modal.defaults.inDuration=0,M.Modal.defaults.outDuration=0,M.Sidenav.defaults.edge="left",M.Sidenav.defaults.draggable=!0,M.Sidenav.defaults.inDuration=250,M.Sidenav.defaults.outDuration=250;

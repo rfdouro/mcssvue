@@ -1,0 +1,263 @@
+<style>
+
+</style>
+
+<div id="appHome">
+ <div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+   <h1 class="header center black-text"><md-icon icon="place" style="font-size: 0.8em"></md-icon>&nbsp;Map</h1>
+   <hr class="star-light">
+  </div>
+ </div>
+
+
+
+ <!--md-card>
+  <md-card-content style="padding: 0px;">
+   <map-leaflet-one-popup id="m01" textopopup="Sede da ANM/ES" lat="-20.312220" lon="-40.307505" style='height: 400px;'></map-leaflet-one-popup>  
+  </md-card-content>
+ </md-card-->
+
+ <!--v-on:click.native="onClickMap"-->
+
+ <md-card>
+  <md-card-content style="padding: 0px;">
+   <map-leaflet-simple id="m01" lat="-20.312220" lon="-40.307505" style='height: 400px;'
+
+                       v-bind:on-click-map="onClickMap"
+                       ref='mapa'>
+    <map-leaflet-marker lat="-20.313225"  lon="-40.317530" texto="p2"></map-leaflet-marker>
+    <map-leaflet-marker lat="-20.312215"  lon="-40.307520" texto="Sede da ANM/ES"></map-leaflet-marker>
+    <map-leaflet-polygon v-bind:points="[{'lat':-20.312215,'lon':-40.307520},
+                         {'lat':-20.313225,'lon':-40.317530},{'lat':-20.312215,'lon':-40.317530}]" 
+                         color='#0f0'
+                         bordercolor='#f00'
+                         texto='poly01' ></map-leaflet-polygon>
+   </map-leaflet-simple>  
+   <br/>
+   <map-leaflet ref="mapa02" id="m02" v-bind:lat="lat" v-bind:lon="lon" style='height: 400px;'
+
+                v-bind:on-click-map="onClickMap"
+                ref='mapa'>
+    <map-leaflet-marker lat="-20.313225"  lon="-40.317530" texto="p2"></map-leaflet-marker>
+    <map-leaflet-marker lat="-20.312215"  lon="-40.307520" texto="Sede da ANM/ES"></map-leaflet-marker>
+    <map-leaflet-polygon v-bind:points="[{'lat':-20.312215,'lon':-40.307520},
+                         {'lat':-20.313225,'lon':-40.317530},{'lat':-20.312215,'lon':-40.317530}]" 
+                         color='#0f0'
+                         bordercolor='#f00'
+                         texto='poly01' ></map-leaflet-polygon>
+    <map-leaflet-gjson v-bind:content="{
+                       'type': 'FeatureCollection',
+                       'features': [
+                       {
+                       'type': 'Feature',
+                       'geometry': {
+                       'type': 'LineString',
+                       'coordinates': [
+                       [-105.00341892242432, 39.75383843460583],
+                       [-105.0008225440979, 39.751891803969535]
+                       ]
+                       },
+                       'properties': {
+                       'popupContent': 'This is a free bus line that will take you across downtown.',
+                       'underConstruction': false
+                       },
+                       'id': 1
+                       },
+                       {
+                       'type': 'Feature',
+                       'geometry': {
+                       'type': 'LineString',
+                       'coordinates': [
+                       [-105.0008225440979, 39.751891803969535],
+                       [-104.99820470809937, 39.74979664004068]
+                       ]
+                       },
+                       'properties': {
+                       'popupContent': 'This is a free bus line that will take you across downtown.',
+                       'underConstruction': true
+                       },
+                       'id': 2
+                       },
+                       {
+                       'type': 'Feature',
+                       'geometry': {
+                       'type': 'LineString',
+                       'coordinates': [
+                       [-104.99820470809937, 39.74979664004068],
+                       [-104.98689651489258, 39.741052354709055]
+                       ]
+                       },
+                       'properties': {
+                       'popupContent': 'This is a free bus line that will take you across downtown.',
+                       'underConstruction': false
+                       },
+                       'id': 3
+                       }
+                       ]
+                       }"></map-leaflet-gjson>
+    <map-leaflet-gjson v-bind:content="{
+                       'type': 'FeatureCollection',
+                       'features': [
+                       {
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': '18th & California Light Rail Stop'
+                       },
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [-104.98999178409576, 39.74683938093904]
+                       }
+                       }, {
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': '20th & Welton Light Rail Stop'
+                       },
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [-104.98689115047453, 39.747924136466565]
+                       }
+                       }
+                       ]
+                       }"></map-leaflet-gjson>
+    <map-leaflet-gjson v-bind:content="{
+                       'type': 'FeatureCollection',
+                       'features': [
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9998241,
+                       39.7471494
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 51
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9983545,
+                       39.7502833
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 52
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9963919,
+                       39.7444271
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 54
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9960754,
+                       39.7498956
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 55
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9933717,
+                       39.7477264
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 57
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9913392,
+                       39.7432392
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 58
+                       },
+                       {
+                       'geometry': {
+                       'type': 'Point',
+                       'coordinates': [
+                       -104.9788452,
+                       39.6933755
+                       ]
+                       },
+                       'type': 'Feature',
+                       'properties': {
+                       'popupContent': 'This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!'
+                       },
+                       'id': 74
+                       }
+                       ]
+                       }"></map-leaflet-gjson>
+   </map-leaflet>  
+  </md-card-content>
+ </md-card>
+
+
+
+</div>
+
+<script>
+ new Vue({
+  el: '#appHome',
+  data: {
+   lat: 39.74739,
+   lon: -105
+  },
+  mounted: function () {
+   var _this = this;
+   this.$nextTick(function () {
+    //console.log(_this.$refs['mapa02'].map);
+    console.log(_this.$refs['mapa02'].baseLayers);
+    //console.log(_this.$refs['mapa02'].map.getCenter());
+    /*_this.$refs['mapa02'].map.eachLayer(function (layer) {
+     console.log(layer);
+    });*/
+   });
+  },
+  methods: {
+   onClickMap: function (e) {
+    var m = this.$refs.mapa.map;
+    var popup = L.popup()
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString()
+                    + "<br>View on <a target='_blank' href='https://www.google.com/maps/@" + e.latlng.lat + "," + e.latlng.lng + ",15z'>GMaps</a>")
+            .openOn(m);
+   }
+  }
+ });
+</script>

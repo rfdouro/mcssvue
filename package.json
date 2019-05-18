@@ -1,0 +1,28 @@
+{
+ "name": "MCssVue",
+ "version": "1.0.0",
+ "keywords": [
+  "util",
+  "functional",
+  "server",
+  "client",
+  "browser"
+ ],
+ "author": "rfdouro",
+ "contributors": [],
+ "dependencies": {
+  "del": "^4.1.0"
+ },
+ "devDependencies": {
+  "gulp": "^4.0.0",
+  "gulp-clean-css": "^4.0.0",
+  "gulp-concat": "^2.6.1",
+  "gulp-html-minifier": "",
+  "gulp-imagemin": "^5.0.3",
+  "gulp-jsdoc3": "^2.0.0",
+  "gulp-rename": "^1.4.0",
+  "gulp-uglify": "^3.0.1",
+  "jsdoc": "^3.5.5",
+  "run-sequence": "^2.2.1"
+ }
+}

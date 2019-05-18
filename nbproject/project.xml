@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>MCssVue</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="jquery" version="3.4.0">
+                <file localPath="public_html/resources/vendor/jquery/jquery.min.js" path="jquery.min.js"/>
+            </library>
+            <library name="leaflet" version="1.4.0">
+                <file localPath="public_html/resources/vendor/leaflet/images/layers-2x.png" path="images/layers-2x.png"/>
+                <file localPath="public_html/resources/vendor/leaflet/images/layers.png" path="images/layers.png"/>
+                <file localPath="public_html/resources/vendor/leaflet/images/marker-icon-2x.png" path="images/marker-icon-2x.png"/>
+                <file localPath="public_html/resources/vendor/leaflet/images/marker-icon.png" path="images/marker-icon.png"/>
+                <file localPath="public_html/resources/vendor/leaflet/images/marker-shadow.png" path="images/marker-shadow.png"/>
+                <file localPath="public_html/resources/vendor/leaflet/leaflet-src.js" path="leaflet-src.js"/>
+                <file localPath="public_html/resources/vendor/leaflet/leaflet-src.js.map" path="leaflet-src.js.map"/>
+                <file localPath="public_html/resources/vendor/leaflet/leaflet.css" path="leaflet.css"/>
+                <file localPath="public_html/resources/vendor/leaflet/leaflet.js" path="leaflet.js"/>
+                <file localPath="public_html/resources/vendor/leaflet/leaflet.js.map" path="leaflet.js.map"/>
+            </library>
+            <library name="materialize" version="1.0.0">
+                <file localPath="public_html/resources/vendor/materialize/css/materialize.css" path="css/materialize.css"/>
+                <file localPath="public_html/resources/vendor/materialize/css/materialize.min.css" path="css/materialize.min.css"/>
+                <file localPath="public_html/resources/vendor/materialize/js/materialize.js" path="js/materialize.js"/>
+                <file localPath="public_html/resources/vendor/materialize/js/materialize.min.js" path="js/materialize.min.js"/>
+            </library>
+            <library name="vue" version="2.6.10">
+                <file localPath="public_html/resources/vendor/vue/vue.min.js" path="vue.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

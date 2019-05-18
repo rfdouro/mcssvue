@@ -1,0 +1,54 @@
+
+
+<div id="app">
+
+ <div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+   <h1 class="header center black-text"><md-icon icon="place" style="font-size: 0.8em"></md-icon>&nbsp;Table</h1>
+   <hr class="star-light">
+  </div>
+ </div>
+
+ <md-table highlight responsive centered class="">
+  <template v-slot:head>
+   <tr>
+    <th>Name</th>
+    <th>Item Name</th>
+    <th>Item Price</th>
+   </tr>
+  </template>
+  <template v-slot:body>
+   <tr>
+    <td>Alvin</td>
+    <td>Eclair</td>
+    <td>$0.87</td>
+   </tr>
+   <tr>
+    <td>Alan</td>
+    <td>Jellybean</td>
+    <td>$3.76</td>
+   </tr>
+   <tr>
+    <td>Jonathan</td>
+    <td>Lollipop</td>
+    <td>$7.00</td>
+   </tr>
+  </template>
+ </md-table>
+
+</div>
+
+<script>
+ new Vue({
+  el: '#app',
+  data: {
+
+  },
+  mounted: function () {
+
+  },
+  methods: {
+
+  }
+ });
+</script>
